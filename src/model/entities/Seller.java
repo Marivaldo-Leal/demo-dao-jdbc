@@ -88,16 +88,12 @@ public class Seller implements Serializable {
 
     @Override
     public String toString() {
-        return "🧑‍💼 Seller\n" +
-                " - ID: " + id + "\n" +
-                " - Name: " + name + "\n" +
-                " - Email: " + email + "\n" +
-                " - Birth Date: " + birthDate + "\n" +
-                " - Base Salary: " + String.format("%.2f", baseSalary) + "\n" +
-                " - Department:\n" +
-                "     - ID: " + department.getId() + "\n" +
-                "     - Name: " + department.getName();
+        return String.format(
+                "{\"id\":%d,\"name\":\"%s\",\"email\":\"%s\",\"birthDate\":\"%s\",\"baseSalary\":%.2f,\"department\":%s}",
+                id, name, email, birthDate.toString(), baseSalary, department.toString()
+        );
     }
+
 
 }
 
