@@ -41,5 +41,9 @@ public class App {
         sellerToUpdate.setName("Nome Atualizado");
         sellerDao.update(sellerToUpdate);
         System.out.println("Update completed");
+
+        System.out.println("\n=== TEST 6: delete ===");
+        sellerDao.deleteById(5);
+        System.out.println("Delete completed");
     }
 }
