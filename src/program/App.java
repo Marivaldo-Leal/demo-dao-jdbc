@@ -21,5 +21,12 @@ public class App {
         for (Seller s : list) {
             System.out.println(s);
         }
+
+        System.out.println("\n==== findAll ====\n");
+        list = sellerDao.findAll();
+        for (Seller s : list) {
+            System.out.println(s);
+        }
+
     }
 }
