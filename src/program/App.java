@@ -18,6 +18,7 @@ public class App {
                 2500.00,
                 d
         );
+
         System.out.println(seller);
     }
 }
