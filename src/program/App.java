@@ -28,5 +28,9 @@ public class App {
             System.out.println(s);
         }
 
+        System.out.println("\n==== Insert ====\n");
+        sellerDao.insert(seller);
+        System.out.println(seller);
+
     }
 }
